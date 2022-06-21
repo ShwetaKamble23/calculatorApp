@@ -36,14 +36,7 @@ public static void main(String[] args) {
 				}
 				System.out.println(n1+" - "+n2+" = "+c);
 				break;
-				
-			case 'c':
-				System.out.println("Enter any Two Numbers : ");
-				n1 = s.nextInt();
-				n2 = s.nextInt();
-				c = n1*n2;
-				System.out.println(n1+" * "+n2+" = "+c);
-				break;
+			
 				
 			case 'd':
 				System.out.println("Enter any Two Numbers : ");
