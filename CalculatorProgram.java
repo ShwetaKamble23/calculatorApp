@@ -3,29 +3,29 @@ import java.util.Scanner;
 public class CalculatorProgram {
 public static void main(String[] args) {
 		
-		Scanner s = new Scanner(System.in);
-		int n1,n2;
+		//Scanner s = new Scanner(System.in);
+		int n1=8,n2=2;
 		int ans = 0,c;
 		char choice;
 		do
 		{
 			System.out.println("a.Addition\tb. Substraction\tc. Multiplication\td. Division\te. Exit");
 			System.out.println("Enter your choice : ");
-			choice = s.next().charAt(0);
+			//choice = s.next().charAt(0);
 			switch(choice)
 			{
 			case 'a':
 				System.out.println("Enter any Two Numbers : ");
-				n1 = s.nextInt();
-				n2 = s.nextInt();
+			//	n1 = s.nextInt();
+			//	n2 = s.nextInt();
 				c = n1+n2;
 				System.out.println(n1+" + "+n2+" = "+c);
 				break;
 				
 			case 'b':
 				System.out.println("Enter any Two Numbers : ");
-				n1 = s.nextInt();
-				n2 = s.nextInt();
+				//n1 = s.nextInt();
+				//n2 = s.nextInt();
 				if(n1>n2)
 				{
 				c = n1-n2;
@@ -36,12 +36,19 @@ public static void main(String[] args) {
 				}
 				System.out.println(n1+" - "+n2+" = "+c);
 				break;
-			
+				
+			case 'c':
+				System.out.println("Enter any Two Numbers : ");
+				//n1 = s.nextInt();
+				//n2 = s.nextInt();
+				c = n1*n2;
+				System.out.println(n1+" * "+n2+" = "+c);
+				break;
 				
 			case 'd':
 				System.out.println("Enter any Two Numbers : ");
-				n1 = s.nextInt();
-				n2 = s.nextInt();
+				//n1 = s.nextInt();
+				//n2 = s.nextInt();
 				if(n2==0)
 				{
 					System.out.println("Denominator should not be Zero");
